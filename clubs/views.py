@@ -20,7 +20,10 @@ def get_club(request: HttpRequest, value):
     return JsonResponse(club)
     pass
 
-#club/post
+#club/create
 def create_club(request : HttpRequest):
-    data = request.POST
+    if request.method == "POST":
+        #create a new club
+        pass
+    
     pass
